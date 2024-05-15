@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marc Brunet</title>
+    <script>
+        function checkPassword(url) {
+            const password = prompt("Veuillez entrer le mot de passe pour accéder à cette ressource :");
+            if (password === "2503") {
+                window.location.href = url;
+            } else {
+                alert("Mot de passe incorrect.");
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>Bonjour, le monde !</h1>
     <h6>Site de Marc Brunet</h6>
-    <table border="50">
+    <table border="10">
         <tr>
             <th>Devoir de Français</th>
             <th>Devoir d'Histoire Géographie</th>
         </tr>
         <tr>
-            <td><a href="Document9.pdf" download="Document9.pdf">Télécharger analyse texte 2 du père Goriot</a></td>
-            <td><p><a href="https://www.calameo.com/read/0032216225b4091579a1a?authid=psre3SOoqlGV" target="_blank">Manuel d'histoire numérique</a></p></td>
+            <td><a href="#" onclick="checkPassword('Document9.pdf')">Télécharger analyse texte 2 du père Goriot</a></td>
+            <td><a href="#" onclick="checkPassword('https://www.calameo.com/read/0032216225b4091579a1a?authid=psre3SOoqlGV')">Manuel d'histoire numérique</a></td>
         </tr>
     </table>
-    <title> dqf,qs</title>
 </body>
 </html>
