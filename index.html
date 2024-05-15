@@ -8,7 +8,7 @@
         function checkPassword(url) {
             const password = prompt("Veuillez entrer le mot de passe pour accéder à cette ressource :");
             if (password === "2503") {
-                window.location.href = url;
+                window.open(url, '_blank');
             } else {
                 alert("Mot de passe incorrect.");
             }
