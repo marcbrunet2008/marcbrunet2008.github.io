@@ -1,6 +1,9 @@
-function checkPassword() {
+function checkPassword(why) {
+    let dictionnaire = {
+    "tableau": "2503",
+    }
     const password = document.getElementById('password').value;
-    if (password === "2503") {
+    if (dictionnaire[why] === password) {
         document.getElementById('content').style.display = 'block';
         document.getElementById('passwordForm').style.display = 'none';
     } else {
