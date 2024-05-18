@@ -1,4 +1,7 @@
 ﻿/* styles.css */
+:root {
+    --couleur-texte: #fff703;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: blue;
@@ -7,13 +10,13 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: var(--couleur-texte);
     text-align: center;
     padding: 20px;
 }
 
 h6 {
-    color: #666;
+    color: var(--couleur-texte);
     text-align: center;
     margin-top: -10px;
 }
