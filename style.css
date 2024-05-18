@@ -1,12 +1,13 @@
-﻿/* style.css */
 :root {
     --couleur-texte: #fff703;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: blue;
     margin: 0;
     padding: 0;
+    color: var(--couleur-texte); /* Définir la couleur de texte par défaut */
 }
 
 h1 {
@@ -49,6 +50,10 @@ a:hover {
 #passwordForm {
     text-align: center;
     margin: 20px;
+}
+
+#passwordForm p {
+    color: var(--couleur-texte); /* Appliquer la couleur au texte dans le formulaire */
 }
 
 #passwordForm input {
